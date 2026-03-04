@@ -24,6 +24,8 @@ app.use(connectLiveReload())
 app.use(bodyParse.urlencoded({ extended: false }));
 app.locals.moment = moment;
 
+console.log(`Server is running in ${process.env.NODE_ENV} mode`);
+
 // Database connection
 const db = require('./config/keys').mongoProdURI;
 mongoose
