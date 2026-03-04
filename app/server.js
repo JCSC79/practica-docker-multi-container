@@ -25,6 +25,7 @@ app.use(bodyParse.urlencoded({ extended: false }));
 app.locals.moment = moment;
 
 // Ensayos de variables de entorno
+// Configuración de logs
 console.log(`Server is running in ${process.env.NODE_ENV} mode`);
 
 // Database connection
@@ -42,3 +43,5 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`Server listening on port ${PORT}`);
 });
+
+// Configuración final de logs validada
